@@ -1,0 +1,131 @@
+.main {
+  background-image: url(images/pexels-pixabay-289737.jpg);
+  /* background-size: contain; */
+  background-size: cover;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.main svg {
+  display: block;
+}
+
+.signupmain svg {
+  display: block;
+}
+.cont {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.slideBottom {
+  animation: slideInFromBottom 1s ease-in;
+}
+.cont-one {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 50%;
+  /* padding-left: 10%; */
+  /* padding-top: 15%; */
+}
+
+li:hover {
+  background-color: grey;
+}
+
+.footer li:hover {
+  background-color: rgb(243, 243, 219);
+}
+
+.ziko {
+  box-shadow: none;
+  border: none;
+  /* background-color: transparent; */
+}
+.cont-two {
+  /* padding-left: 10%; */
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+img.cont-three {
+  border-radius: 15px;
+  border: 7px solid #1565c0;
+  /* position: absolute;
+      top: 0px;
+      right: 50px; */
+  /* width: 500px;
+      height: 500px; */
+}
+a.cont-two {
+  text-decoration: underline;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main-cont {
+  margin-top: 50px;
+}
+
+/* .form-cont {
+    margin-top: 20px;
+  } */
+
+/* .submit {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submit:hover {
+    background-color: black;
+    color: white;
+  } */
+
+.img-hover {
+  overflow: hidden;
+}
+
+.img-hover img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.img-hover:hover img {
+  transform: scale(1.1);
+}
+
+.brand-logo {
+  color: rgb(83, 83, 83);
+}
+/* .card {
+    padding: 20px;
+    box-shadow: ;
+  } */ ;

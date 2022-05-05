@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Schools</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar navbar-expand-md bg-transparent navbar-light">
+        <div class="logo">
+          <a href="index.html" class="navbar-brand"
+            ><i class="fa fa-graduation-cap"></i>UniXplore</a
+          >
+        </div>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse d-md-flex justify-content-between"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addaschool.html">Add a School</a>
+            </li>
+          </ul>
+          <form class="form-inline" action="">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-dark" type="submit">Find School...</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row mt-8 pl-3 cont text-white">
+          <div class="white-text col-m6-s12 cont-one">
+            <p>
+              Any successful career starts with a good Education <br />
+              Discover Millions of Universities around the World
+            </p>
+            <a href="addaschool.html" class="text-white cont-two"
+              >Add a School →</a
+            >
+            <p class="cont-two">
+              Not a registered member?
+              <a href="signup.html" class="text-white cont-two">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="white"
+          fill-opacity="1"
+          d="M0,256L48,261.3C96,267,192,277,288,266.7C384,256,480,224,576,181.3C672,139,768,85,864,53.3C960,21,1056,11,1152,10.7C1248,11,1344,21,1392,26.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- main body -->
+    <div class="school-container">
+      <!-- <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover flex d-flex  justify-content-center">
+              <img src="images/Capetown.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">University of Cape Town</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <!-- Modal Trigger -->
+      <!-- <button data-target="modal1" class="btn modal-trigger mb-2 ">
+                  Add School
+                </button>
+   -->
+      <!-- Modal Structure -->
+      <!-- <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <div class="card">
+                      <table>
+                        <tr>
+                          <td>Name</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Country</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>City</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Address</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Type</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Tuition fee range</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Ownership</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Founded</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Total enrollment</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                          <td>Short description</td>
+                          <td>...</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="#!"
+                      class="modal-close waves-effect waves-green btn-flat"
+                      >X</a
+                    >
+                  </div>
+                </div>
+  
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button> -->
+      <!-- <button class="btn btn-primary" type="submit">
+                  Update School
+                </button> -->
+      <!-- </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img src="images/toronto.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">University of Toronto</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img
+                src="images/george washington.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Goerge Washington University</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img src="images/kent.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kent State University</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img src="images/delhi.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">University of Delhi</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img
+                src="images/royal holloway.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Royal Holloway University of London</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img src="images/king.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">King's University College</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img src="images/Heidelberg.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Heidelberg University</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card img-hover">
+              <img src="images/freiburg.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">University of Freiberg</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add School</a>
+                <button class="btn btn-primary" type="submit">
+                  Update School
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      -->
+    </div>
+
+    <!-- footer -->
+    <footer class="footer py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="signup.html" class="nav-link px-2 text-muted">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a href="signin.html" class="nav-link px-2 text-muted">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a href="addaschool.html" class="nav-link px-2 text-muted"
+            >Add a School</a
+          >
+        </li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
+    </footer>
+
+    <script src="schl.js"></script>
+  </body>
+</html>
